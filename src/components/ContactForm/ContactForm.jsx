@@ -17,6 +17,7 @@ export default class ContactForm extends React.Component {
     event.preventDefault();
     const { addContact } = this.props;
     addContact(this.state);
+    this.setState({ name: '', number: '' });
   };
 
   render() {
